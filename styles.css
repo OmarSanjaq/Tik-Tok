@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    height: 100vh;
+
+}
+.head{
+    display: inline;
+}
+.logo{
+    width: 100px;
+}
+
+.tiktok-app{
+    position: relative;
+    height: 100%;
+    background-color: black;
+    overflow: scroll;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    scroll-snap-type: y mandatory;    
+
+}
+.tiktok-app::-webkit-scrollbar{
+    display: none;
+}
+.video{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    scroll-snap-align: start;    
+
+}
+.video-player{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.video-sidebar{
+    position: absolute;
+    top: 45%;
+    right: 10px;
+}
+.video-icon{
+    text-align: center;
+}
+.video-icon img{
+    width: 30px;
+    cursor: pointer;
+}
+.video-icon p{
+    margin-bottom: 20px;
+}
+.footer{
+    display: flex;
+    position: relative;
+    bottom: 130px;
+    margin-left: 20px;
+}
+@keyframes rotate {
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+.play-img{
+    width: 55px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    animation: rotate infinite 5s linear;
+}
+
+.footer-text{
+    flex: 1;
+}
+.footer-text h3{
+    padding-bottom: 20px;
+
+}
+.img-marquee{
+    display: flex;
+    align-items: center;
+    width: 390px;
+}
+.img-marquee img{
+    width: 35px;
+    position: absolute;
+    top: 70px;
+}
+.img-marquee marquee{
+    margin-left: 35px;
+    margin-top: 20px;
+    width: 65%;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+}
